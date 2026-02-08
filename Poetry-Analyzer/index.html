@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Analizues Poezie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Analizues Poezie</h1>
+      <p>Ngjit një poezi dhe merr gjuhën, strukturën, rimën (bazike) dhe poezitë më të ngjashme.</p>
+      <div class="hint">
+        Backend: <code>http://localhost:8080/analyze</code>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Input</h2>
+
+        <label for="poem">Teksti i poezisë</label>
+        <textarea id="poem" placeholder="Ngjit poezinë këtu..."></textarea>
+
+        <div class="controls">
+          <div class="field">
+            <label for="topk">Top K (ngjashmëri)</label>
+            <input id="topk" type="number" min="1" max="50" value="5" />
+          </div>
+
+          <button id="analyzeBtn" type="button">Analizo</button>
+        </div>
+
+        <div id="status" class="status"></div>
+      </section>
+
+      <section class="card">
+        <h2>Rezultatet</h2>
+        <div id="results" class="results">
+          <div class="muted">S’ka rezultate ende. Vendos një poezi dhe kliko “Analizo”.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Tip: Herën e parë mund të jetë më e ngadaltë sepse shkarkohet modeli.</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
