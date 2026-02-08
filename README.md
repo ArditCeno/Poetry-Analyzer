@@ -5,10 +5,15 @@ The system analyzes any poem by detecting its language and finding semantically 
 Built entirely as a solo project, PoetryMind combines machine learning with a minimal web interface to demonstrate semantic text understanding in a creative domain.
 
 ✨ Features
+
 🌍 Automatic language detection
+
 🧠 Semantic similarity between poems
+
 ⚡ Fast vector search using FAISS
+
 🌐 REST API powered by FastAPI
+
 🖥 Simple browser-based interface
 
 🔬 How It Works
